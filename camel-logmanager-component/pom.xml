@@ -6,12 +6,12 @@
 
 	<parent>
 		<groupId>com.camel.demo</groupId>
-		<artifactId>parent-project</artifactId>
+		<artifactId>cameldemos</artifactId>
 		<version>1.0.0</version>
 	</parent>
 
 	<artifactId>camel-logmanager-component</artifactId>
-	<version>1.0.1</version>
+	<version>1.0.0</version>
 
 	<packaging>bundle</packaging>
 
