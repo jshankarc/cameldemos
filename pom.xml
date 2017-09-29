@@ -41,6 +41,11 @@
 		</dependency>
 	</dependencies>
 
+	<modules>
+		<module>camel-log-demo</module>
+		<module>camel-logmanager-component</module>
+	</modules>
+
 	<repositories>
 		<repository>
 			<releases>
@@ -118,10 +123,7 @@
 		</pluginRepository>
 	</pluginRepositories>
 
-	<modules>
-		<module>camel-log-demo</module>
-		<module>camel-logmanager-component</module>
-	</modules>
+
 
 	<build>
 		<plugins>
