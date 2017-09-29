@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.camel.demo</groupId>
-	<artifactId>parent-project</artifactId>
+	<artifactId>cameldemos</artifactId>
 	<version>1.0.0</version>
 	<packaging>pom</packaging>
 	<name>camel parent project</name>
