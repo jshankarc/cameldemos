@@ -1,8 +1,7 @@
 Camel Log Manager Component
 =========================================
 
-To build this project use
-
-    mvn install
+Syslog configuration Java classes are imported from https://github.com/CloudBees-community/syslog-java-client
+I am very thankful to this team
 
 To run, deploy this project in Jboss Fuse container
