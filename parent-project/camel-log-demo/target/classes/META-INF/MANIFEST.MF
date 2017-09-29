@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1506690075147
+Build-Jdk: 1.8.0_92
+Built-By: jschalu
+Bundle-ManifestVersion: 2
+Bundle-Name: Camel Log Route Demo
+Bundle-SymbolicName: camel-log-demo
+Bundle-Version: 1.0.1
+Created-By: Apache Maven Bundle Plugin
+Import-Package: org.apache.camel.spring.spi;version="[2.17,3)"
+Tool: Bnd-3.3.0.201609221906

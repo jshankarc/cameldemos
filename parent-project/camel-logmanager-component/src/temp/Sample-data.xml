@@ -1,0 +1,12 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:req="http://cbq.com.qa/Services/Cards/PartyAcctCardAcctStmtRel/Inquire/Request">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:GetIssuerStatements>
+         <tem:h>
+            <tem:MessageID>CPRDO -CIB-97da0430-82e-BAN2            -4010-170428124603148</tem:MessageID>
+            <tem:RequestorID>ESB</tem:RequestorID>
+         </tem:h>
+         <tem:strCardNumber>567419</tem:strCardNumber>
+      </tem:GetIssuerStatements>
+   </soapenv:Body>
+</soapenv:Envelope>

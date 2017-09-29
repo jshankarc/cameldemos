@@ -1,0 +1,22 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:osgix="http://www.springframework.org/schema/osgi-compendium"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+    http://www.springframework.org/schema/osgi-compendium 
+	http://www.springframework.org/schema/osgi-compendium/spring-osgi-compendium.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+ 
+    <context:property-placeholder location="classpath:properties/logmanager.properties" />
+    
+    <!-- <context:property-placeholder properties-ref="props"/>
+    <osgix:cm-properties id="props" persistent-id="logmanager" /> -->
+     
+    <bean id="configuration" class="com.camel.demo.syslog.SyslogMessageTransmitter" init-method="initializeConfigValues">
+        <property name="ipAddress" value="${ip.address}"/>
+        <property name="port" value="${port}"/>    
+    </bean>
+    
+</beans>
