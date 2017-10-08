@@ -21,8 +21,8 @@ public class SyslogMessageTransmitter {
 		messageSender.setDefaultFacility(Facility.LOCAL0);
 		messageSender.setDefaultSeverity(Severity.INFORMATIONAL);
 		//to run the Junit, change the Ip address and port of the syslog server
-		messageSender.setSyslogServerHostname(ipAddress);
-		messageSender.setSyslogServerPort(port);
+		messageSender.setSyslogServerHostname("localhost");
+		messageSender.setSyslogServerPort(2053);
 		messageSender.setMessageFormat(MessageFormat.RFC_3164);
 		messageSender.setSsl(false);
 		messageSender.setMaxRetryCount(3);

@@ -23,7 +23,7 @@ public class LogManagerTest extends CamelTestSupport {
                 from("file:src/temp?noop=true")
                 	.setProperty("transactionId", simple("${exchangeId}"))
                 	.convertBodyTo(java.lang.String.class)
-                	.loop(1)
+                	.loop(100)
             			.toD("logmanager://log?serviceName=camel-log-demo&messageType=Rq&logTime=$simple{date:now:yyMMddHHmmssSSS}")
             			.delay().constant("100")
             		.end()

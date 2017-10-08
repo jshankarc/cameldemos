@@ -37,6 +37,7 @@ public class LogManagerProducer extends DefaultProducer {
 		messageType.setMessageType(endpoint.getMessageType());
 		messageType.setServiceName(endpoint.getServiceName());
 		messageType.setLoggingTime(endpoint.getLogTime());
+		messageType.setData(exchange.getIn().getBody(String.class));
 		
 		Gson gson = new GsonBuilder().disableHtmlEscaping().create();
 		log.debug("LogManager::JsonData {}" , gson.toJson(messageType));
